@@ -26,7 +26,6 @@ describe('Login UsingAPI', () => {
       cy.visit('/bankaccounts');
       bankAccountPage.clickDeleteButton();
       bankAccountPage.elements.getLastAccountAdded().contains("(Deleted)").should('be.visible');
-      //cy.contains(Cypress.env('bankName')).should('be.visible');
     });
 
 
