@@ -23,7 +23,7 @@
   "dependencies": {},
   "devDependencies": {
     "axios": "^0.21.4",
-    "cypress": "^8.5.0",
+    "cypress": "^8.6.0",
     "mochawesome": "^6.3.1"
   }
 }
