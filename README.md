@@ -11,7 +11,7 @@ Pasos para ejecutar el proyecto final:
 
 2. Ejecutar el proyecto:
 2.1. Clonar el repositiorio del proyecto 
-git clone https://github.com/ale-quiros/TAM-Tarea2
+git clone https://github.com/ale-quiros/TMA---ProyectoFinal.git
 
 2.2. Abrir archivo cypress.env.json y agregar la siguiente informacion
 
@@ -27,7 +27,7 @@ git clone https://github.com/ale-quiros/TAM-Tarea2
 -Opcion#2: Ejecutar todo el proyecto desde consola
 npx cypress run ejecutarapp
 
-Opcion#3: Ejecutar los scripts individualmente desde consola
+Opcion#3: Ejecutar los cripts individualmente desde consola
 npx cypress run --spec "cypress/integration/authentication/login.spec.js"
 npx cypress run --spec "cypress/integration/authentication/signup.specs.js"
 npx cypress run --spec "cypress/integration/BankAccount/bankaccount.specs.js"
