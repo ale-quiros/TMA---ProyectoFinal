@@ -18,6 +18,18 @@ git clone https://github.com/ale-quiros/TAM-Tarea2
     2.2.1. Reenplazar USUARIO_PRUEBA por el usuario de prueba obtenido anteriormente de la base de datos del proyecto realworld-app (1.3 - Paso 3)
     2.2.2. Reenplazar PASWORD por el password de prueba de los usuarios de la base de datos del proyecto realworld-app enviado aparte en el archivo documentacion.docx
 
+2.3. Ejecucion del proyecto
+-Opcion#1:  Abrir la ventana de Cypress 
 2.3. Ejecutar: "npm init"
 2.4. Ejecutar: "npm install cypress --save-dev"
 2.5. Ejecutar: "npx cypress open"
+
+-Opcion#2: Ejecutar todo el proyecto desde consola
+npx cypress run ejecutarapp
+
+Opcion#3: Ejecutar los scripts individualmente desde consola
+npx cypress run --spec "cypress/integration/authentication/login.spec.js"
+npx cypress run --spec "cypress/integration/authentication/signup.specs.js"
+npx cypress run --spec "cypress/integration/BankAccount/bankaccount.specs.js"
+npx cypress run --spec "cypress/integration/transactions/addTransaction.specs.js"
+npx cypress run --spec "cypress/integration/transactions/interactTransaction.specs.js"

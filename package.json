@@ -4,7 +4,9 @@
   "description": "Proyecto UCreativa Cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "ejecutarapp": "--spec cypress/integration/authentication/login.spec.js"
+
   },
   "repository": {
     "type": "git",
