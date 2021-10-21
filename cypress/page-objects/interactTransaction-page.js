@@ -21,7 +21,7 @@ class InteractTransactionPage {
   }
 
   clickOnFirstTransaction() {
-    this.elements.getTransactionUnliked().click({ force: true });
+    this.elements.getFirstTransaction().click({ force: true });
   }
 
   clickOnTransactionUnliked() {

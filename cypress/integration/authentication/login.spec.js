@@ -11,15 +11,21 @@ describe('Login Tests', () => {
       loginPage.visit();
     });
 
-    context('Positive Scenarios', () => {
-      it('should log in - POM', () => {
+/*---------------------------------------------------------------------------------------------
+1. Se obtienen los credenciales (username y password) de las variables de ambiente 
+2. Una vez logeado el usurio se verifica que se estéen la url correcta y que el 
+nombre del usurio sea desplegado en la pagina
+------------------------------------------------------------------------------------------------*/
+
+    context('Autenticacion de usuarios - SignIn', () => {
+      it('Un usuario existente deberia poder loggearse en la aplicacion', () => {
         loginPage.typeCredentials({
-          username: Cypress.env('margarettaUser'),
-          password: Cypress.env('margarettaPassword'),
+          username: Cypress.env('testUserUser'),
+          password: Cypress.env('testUserPassword'),
         });
         loginPage.clickSignIn();
         cy.url().should('include', '/');
-        cy.contains(Cypress.env('margarettaUser')).should('be.visible');
+        cy.contains(Cypress.env('testUserUser')).should('be.visible');
       });
     });
   });

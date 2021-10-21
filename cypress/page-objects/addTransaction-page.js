@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 class AddTransactionPage {
-  url = '/new';
+  url = '/';
   elements = {
     getFirstUser: () => cy.get('[data-test="users-list"]').children().first(),
     getMainLayer: () => cy.get('[data-test="main"]'),
@@ -21,7 +21,7 @@ class AddTransactionPage {
   }
 
   clickOnFirstUser() {
-    this.elements.getFirstUser().click();
+    this.elements.getFirstUser().click( {force: true});
   }
 
   clickOnRequestButton() {
